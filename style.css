@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(244, 244, 244);
+  width: 375px;
+  margin: 0 auto;
+}
+@media (min-width: 1330px) {
+  .footer {
+    width: 1330px;
+  }
+}
+.footer .footer__logo {
+  width: 55px;
+  padding: 45px 0;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  text-align: center;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+  line-height: 2.5em;
+}
+.footer ul li a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+.footer .social-media-container {
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+}
+.footer .social-media-container a {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+.footer .social-media-container a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+
+@media (min-width: 1330px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 100px;
+    align-items: center;
+  }
+  .footer ul li {
+    text-align: start;
+  }
+  .footer .social-media-container {
+    font-size: 1.2em;
+  }
+}
+.main-container {
+  width: 375px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 0 22px;
+  background-image: url("../images/bg-header-mobile.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1330px) {
+  .main-container {
+    width: 1330px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .main-container {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 160px 0;
+}
+@media (min-width: 1366px) {
+  .header {
+    padding: 0 280px;
+  }
+}
+.header__logo {
+  margin: auto;
+}
+.header__title {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: hsl(210deg, 10%, 33%);
+  font-size: 1.9rem;
+}
+@media (min-width: 1366px) {
+  .header__title {
+    font-size: 2.2em;
+  }
+}
+.header__description {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+@media (min-width: 1366px) {
+  .header__description {
+    font-size: 1.2em;
+  }
+}
+.header .header-buttons-downloads {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.header .header-buttons-downloads button:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1330px) {
+  .header .header-buttons-downloads {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .header .header-buttons-downloads button {
+    padding: 0 30px;
+    width: 240px;
+  }
+}
+.header .header-buttons-downloads button {
+  padding: 17px;
+  background: hsl(233deg, 100%, 69%);
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  border-bottom: 4px solid hsl(233deg, 42%, 52%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.header .header-buttons-downloads button:first-child {
+  background: hsl(171deg, 66%, 44%);
+  border-bottom: 4px solid hsl(170deg, 41%, 45%);
+}
+
+@media (min-width: 1366px) {
+  .section-snippets {
+    padding: 0 280px;
+  }
+}
+
+.snippets__title {
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.snippets__description {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 80px;
+}
+@media (min-width: 1366px) {
+  .snippets__description {
+    font-size: 1.2em;
+  }
+}
+
+.section-features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.section-features .image-container__illustration {
+  width: 100%;
+}
+.section-features h3 {
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  padding: 15px 0;
+}
+.section-features p {
+  color: hsl(201deg, 11%, 66%);
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 40px;
+}
+@media (min-width: 1366px) {
+  .section-features p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1330px) {
+  .section-features {
+    flex-direction: row;
+    row-gap: 0;
+    position: relative;
+  }
+  .section-features .image-container {
+    min-width: 55%;
+    position: relative;
+    left: -100px;
+  }
+  .section-features .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-features .information p {
+    text-align: start;
+    margin-bottom: 20px;
+  }
+}
+.section-screenshot .screenshot__title {
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+.section-screenshot .screenshot__description {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+@media (min-width: 1366px) {
+  .section-screenshot .screenshot__description {
+    font-size: 1.2em;
+  }
+}
+.section-screenshot .screenshot__illustration {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.section-workflow .workflow__title {
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+.section-workflow .workflow__description {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+@media (min-width: 1366px) {
+  .section-workflow .workflow__description {
+    font-size: 1.2em;
+  }
+}
+.section-workflow .workflow__item {
+  display: flex;
+  flex-direction: column;
+}
+.section-workflow .workflow__item img {
+  width: 60px;
+  margin: 45px auto;
+}
+.section-workflow .workflow__item h3 {
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-workflow .workflow__item p {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+@media (min-width: 1366px) {
+  .section-workflow .workflow__item p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1330px) {
+  .workflow-items-container {
+    display: flex;
+    gap: 20px;
+    padding: 5px 15px;
+  }
+  .workflow-items-container .workflow__item {
+    width: 33.3%;
+  }
+}
+.section-downloads {
+  margin: 160px 0;
+}
+.section-downloads .downloads__title {
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-downloads .downloads__description {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+@media (min-width: 1366px) {
+  .section-downloads .downloads__description {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1366px) {
+  .section-downloads .downloads__description {
+    padding: 0 280px;
+  }
+}
+.section-downloads .downloads-buttons-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.section-downloads .downloads-buttons-container button:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1330px) {
+  .section-downloads .downloads-buttons-container {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .section-downloads .downloads-buttons-container button {
+    padding: 0 30px;
+    width: 240px;
+  }
+}
+.section-downloads .downloads-buttons-container button {
+  padding: 17px;
+  background: hsl(233deg, 100%, 69%);
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  border-bottom: 4px solid hsl(233deg, 42%, 52%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.section-downloads .downloads-buttons-container button:first-child {
+  background: hsl(171deg, 66%, 44%);
+  border-bottom: 4px solid hsl(170deg, 41%, 45%);
+}
+
+.section-clients {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  gap: 50px;
+}
+
+@media (min-width: 1330px) {
+  .section-clients {
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0;
+  }
+  .section-clients img {
+    height: 35px;
+  }
+  .section-screenshot {
+    padding: 0 160px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

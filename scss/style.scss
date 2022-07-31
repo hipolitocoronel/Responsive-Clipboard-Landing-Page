@@ -1,0 +1,289 @@
+@use 'variables';
+@use 'initial';
+@use 'mixins';
+@use 'footer';
+
+.main-container{
+    width: 375px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 0 22px;
+    background: {
+        image:url('../images/bg-header-mobile.png');
+        position: top;
+        repeat: no-repeat;
+    }
+    @include mixins.desktop-view;
+}
+
+@media (min-width: 1336px){
+    .main-container{
+        background-image: url('../images/bg-header-desktop.png');
+    }
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: 160px 0;
+    @include mixins.padding;
+    &__logo{
+        margin: auto;
+    }
+
+    &__title{
+        margin-top: 60px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: variables.$Dark-Grayish-Blue;
+        font-size: 1.9rem;
+        @include mixins.title;
+    }
+
+    &__description{
+        color: variables.$Grayish-Blue;
+        text-align: center;
+        font-size: .9em;
+        line-height: 1.5em;
+        @include mixins.text;
+    }
+
+    .header-buttons-downloads{
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        @include mixins.button;
+
+        button{
+            padding: 17px;
+            background: variables.$Light-Blue;
+            font-size: 1em;
+            color: #fff;
+            border: none;
+            border-bottom: 4px solid hsl(233, 42%, 52%);;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        button:first-child{
+            background: variables.$Strong-Cyan;
+            border-bottom: 4px solid hsl(170, 41%, 45%);;
+            
+        }
+    }
+}
+
+.section-snippets{
+    @include mixins.padding;
+}
+
+.snippets__title{
+    color: variables.$Dark-Grayish-Blue;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.snippets__description{
+    color: variables.$Grayish-Blue;
+    text-align: center;
+    font-size: .9em;
+    line-height: 1.5em;
+    margin-bottom: 80px;
+    @include mixins.text;
+}
+
+.section-features{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    .image-container__illustration{
+        width: 100%;
+    }
+
+    h3{
+        color: variables.$Dark-Grayish-Blue;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    p{
+        color: variables.$Grayish-Blue;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: .9em;
+        margin-bottom: 40px;
+        @include mixins.text;
+    }
+}
+
+@media (min-width: 1330px ){
+    .section-features{
+        flex-direction: row;
+        row-gap: 0;
+        position: relative;
+
+        .image-container{
+            min-width: 55%;
+            position: relative;
+            left: -100px;
+        }
+
+        .information{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                text-align: start;
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+}
+
+.section-screenshot{
+    .screenshot__title{
+        color: variables.$Dark-Grayish-Blue;
+        text-align: center;
+        margin-top: 140px;
+        margin-bottom: 30px;
+    }
+
+    .screenshot__description{
+        color: variables.$Grayish-Blue;
+        text-align: center;
+        font-size: .9em;
+        line-height: 1.5em;
+        @include mixins.text;
+    }
+
+    .screenshot__illustration{
+        margin-top: 60px;
+        width: 100%;
+    }
+}
+
+
+.section-workflow{
+    .workflow__title{
+        color: variables.$Dark-Grayish-Blue;
+        text-align: center;
+        margin-top: 140px;
+        margin-bottom: 20px;
+    }
+    .workflow__description{
+        color: variables.$Grayish-Blue;
+        text-align: center;
+        font-size: .9em;
+        line-height: 1.5em;
+        @include mixins.text;
+    }
+
+    .workflow__item{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 60px;
+            margin: 45px auto;
+
+        }
+
+        h3{
+            color: variables.$Dark-Grayish-Blue;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color: variables.$Grayish-Blue;
+            text-align: center;
+            font-size: .9em;
+            line-height: 1.5em;
+            @include mixins.text;
+        }
+    }
+}
+
+
+@media (min-width: 1330px){
+    .workflow-items-container{
+        display: flex;
+        gap: 20px;
+        padding: 5px 15px;
+        .workflow__item{
+            width: 33.3%;
+
+        }
+        
+        
+    }
+}
+
+.section-downloads{
+    margin: 160px 0;
+    .downloads__title{
+        color: variables.$Dark-Grayish-Blue;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .downloads__description{
+        color: variables.$Grayish-Blue;
+        text-align: center;
+        font-size: .9em;
+        line-height: 1.5em;
+        @include mixins.text;
+        @include mixins.padding;
+    }
+
+    .downloads-buttons-container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        @include mixins.button;
+        button{
+            padding: 17px;
+            background: variables.$Light-Blue;
+            font-size: 1em;
+            color: #fff;
+            border: none;
+            border-bottom: 4px solid hsl(233, 42%, 52%);;
+            border-radius: 50px;
+            cursor: pointer;
+
+        }
+
+        button:first-child{
+            background: variables.$Strong-Cyan;
+            border-bottom: 4px solid hsl(170, 41%, 45%);;
+            
+        }
+    }
+}
+
+.section-clients{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    gap: 50px;
+}
+
+@media (min-width: 1330px){
+
+    .section-clients{
+        flex-direction: row;
+        justify-content: center;
+        padding: 100px 0;
+        img{
+            height: 35px;
+        }
+    }
+    
+    .section-screenshot{
+        padding: 0 160px;
+    }
+}
